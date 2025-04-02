@@ -1,4 +1,4 @@
-package contornos.ud4.maloscheiros;
+package ud4.a11maloscheiros;
 
 class Concerto {
     private String nome;
