@@ -1,0 +1,75 @@
+/*Programa que recibe y almacena información
+de un producto, tambien imprime información sobre
+el stock del producto, detalles y toda la información del producto*/
+
+
+class Producto {
+    private String nombre;
+    private double precio;
+    private String categoria;
+    private double peso;
+    private String marca;
+    private int stock;
+
+    public Producto(String nombre, double precio, String categoria, double peso, String marca, int stock) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.categoria = categoria;
+        this.peso = peso;
+        this.marca = marca;
+        this.stock = stock;
+    }
+
+    public String[] obtenerDetalles() {
+        /*Este método devuelve un array con demasiada información
+        que en situaciones puede no ser utilizada*/
+        return new String[]{nombre, marca, categoria};
+    }
+
+    public String verificadorDeStockDelProductoEnElAlmacen() {
+        /*En este método nos encontramos el problema de "identifier size",
+        ya que los nombres de los identificadores son o demasiado cortos o
+        demasiado largos
+         */
+        String s;
+        if (stock > 50) {
+            s = "Stock alto";
+        } else if (stock >= 10) {
+            s = "Stock medio";
+        } else if (stock > 0) {
+            s = "Stock bajo";
+        } else if (stock == 0) {
+            s = "Sin stock";
+        } else {
+            s = "Valor inválido";
+        }
+        return s;
+    }
+
+
+
+    public void mostrarInfo() {
+        /*El método que muestra el producto contiene una linea de código demasiado
+        extensa la cual puede dificultar su legibilidad y puede provocar errores en el programa,
+        así como dificulta su mantenimiento
+         */
+        System.out.println("Producto: " + nombre + ", Precio: " + precio + ", Categoría: " + categoria +
+                ", Peso: " + peso + "kg, Marca: " + marca + ", Stock: " + stock);
+    }
+}
+
+public class Albaran {
+    public static void main(String[] args) {
+
+        /* El constructor recibe demasiados parámetros que implica un problema
+         de "too many parameters" lo que dificulta su comprensión
+         */
+        Producto producto = new Producto("Portatil", 1200.99, "Electrónica", 2.5, "Dell", 10);
+        producto.mostrarInfo();
+        String[] datos = producto.obtenerDetalles();
+        System.out.println("DETALLES: ");
+        System.out.println("Nombre: " + datos[0]);
+        System.out.println("Marca: " + datos[1]);
+        System.out.println(producto.verificadorDeStockDelProductoEnElAlmacen());
+    }
+}
