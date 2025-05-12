@@ -1,0 +1,42 @@
+package ud4.maloscheiros;
+// CARLOS DE LA TORRE ABOAL
+
+public class ComplejidadCiclomatica {
+    /*
+    Dentro de los bad smells, he escogido el de Complejidad Ciclomática, que se basa
+    en que una clase tiene demasiadas ramas y bucles, lo que significa que el método o métodos afectados por este problema deberían dividirse en varios métodos o simplificarse.
+     */
+    public void procesarPedido(String producto, int precio, int cantidad, String metodoPago) {
+        if (producto != null && !producto.isEmpty()) {
+            if (cantidad > 0) {
+                double precioTotal = cantidad * precio;
+
+                if (metodoPago.equals("Tarjeta")) {
+                    System.out.println("Pagando con tarjeta...");
+                } else if (metodoPago.equals("PayPal")) {
+                    System.out.println("Pagando en efectivo...");
+                } else {
+                    System.out.println("Método de pago inválido.");
+                    return;
+                }
+
+
+                System.out.println("Total a pagar: $" + precioTotal);
+            } else {
+                System.out.println("Cantidad inválida.");
+            }
+        } else {
+            System.out.println("Producto inválido.");
+        }
+        for (int i = 0; i < cantidad; i++) {
+            System.out.println("Empaquetando " + producto + " " + (i + 1));
+        }
+        System.out.println("--------------------------");
+        System.out.println("Pedido procesado");
+    }
+
+    public static void main(String[] args) {
+        ComplejidadCiclomatica complejidad = new ComplejidadCiclomatica();
+        complejidad.procesarPedido("Cuadro", 200, 2, "Tarjeta");
+    }
+}
