@@ -1,4 +1,4 @@
-package contornos.ud3;
+package ud3;
 
 public class PasswordValidator {
     public static boolean isValid(String password) {

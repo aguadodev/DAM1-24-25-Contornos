@@ -1,4 +1,4 @@
-package contornos.ud3;
+package ud3;
 
 public class AgeClassifier {
     public static String classify(int age) {

@@ -1,4 +1,4 @@
-package contornos.ud3;
+package ud3;
 
 import static org.junit.Assert.fail;
 import static org.junit.jupiter.api.Assertions.assertEquals;

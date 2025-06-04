@@ -1,4 +1,4 @@
-package contornos.ud3;
+package ud3;
 
 import org.junit.jupiter.api.Test;
 

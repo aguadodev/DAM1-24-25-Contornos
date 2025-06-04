@@ -1,4 +1,4 @@
-package contornos.ud3;
+package ud3;
 
 import java.util.Random;
 import java.util.Scanner;

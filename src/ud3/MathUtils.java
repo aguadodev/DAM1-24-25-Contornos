@@ -1,4 +1,4 @@
-package contornos.ud3;
+package ud3;
 
 public class MathUtils {
     public static int factorial(int n) {
