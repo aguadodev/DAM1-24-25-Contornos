@@ -1,4 +1,4 @@
-package contornos.ud4.doc;
+package ud4.doc;
 
 /**
  * <h2>Clase de empresa</h2>

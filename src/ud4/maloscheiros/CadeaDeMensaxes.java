@@ -5,7 +5,7 @@
 Isto xera alto acoplamento, dificultando o mantemento e facendo o código máis fráxil.
 Un cambio interno nunha clase intermedia (por exemplo, Perfil) pode obrigar
 a modificar tamén a clase externa (Aplicacion), aínda que non debería coñecer a súa estrutura interna. */
-package ud4.a11maloscheiros;
+package ud4.maloscheiros;
 
 public class CadeaDeMensaxes {
     public static void main(String[] args) {

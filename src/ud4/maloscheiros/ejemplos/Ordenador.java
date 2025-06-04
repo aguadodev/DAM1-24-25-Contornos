@@ -1,4 +1,4 @@
-package ud4.a11maloscheiros.Yago_Otero_Martinez;
+package ud4.maloscheiros.ejemplos;
 
 public class Ordenador extends Servidor{
     String so;

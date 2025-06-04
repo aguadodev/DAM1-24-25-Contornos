@@ -1,38 +1,29 @@
-package contornos.ud4.maloscheiros;
+package ud4.maloscheiros;
 
-class Concerto {
-    private String nome;
-    private double prezoBase;
+import java.util.Scanner;
 
-    public Concerto(String nome, double prezoBase) {
-        this.nome = nome;
-        this.prezoBase = prezoBase;
+class DuplicatedCode {
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("introduce un usuario (nombre y edad)");
+        String nombre=sc.nextLine();
+        int edad = sc.nextInt();
+        System.out.println("Introudce un empleado (nombre y edad)");
+        String nombre2 =sc.nextLine();
+        sc.nextLine();
+        int edad2 = sc.nextInt();
+        printUserDetails(nombre, edad);
+        printEmployeeDetails(nombre2, edad2);
     }
 
-    public double calcularPrezoFinal(double desconto) {
-        double prezoFinal = prezoBase - (prezoBase * desconto / 100);
-        if (prezoFinal < 0) {
-            prezoFinal = 0;
-        }
-        return prezoFinal;
+    public static void printUserDetails(String name, int age) {
+        System.out.println("Nombre: " + name);
+        System.out.println("Edad: " + age);
     }
-}
-
-class Conferencia {
-    private String nome;
-    private double prezoBase;
-
-    public Conferencia(String nome, double prezoBase) {
-        this.nome = nome;
-        this.prezoBase = prezoBase;
-    }
-
-    public double calcularPrezoFinal(double desconto) {
-        double prezoFinal = prezoBase - (prezoBase * desconto / 100);
-        if (prezoFinal < 0) {
-            prezoFinal = 0;
-        }
-        return prezoFinal;
+    public static void printEmployeeDetails(String name, int age) {
+        System.out.println("Nombre: " + name);
+        System.out.println("Edad: " + age);
     }
 }
-

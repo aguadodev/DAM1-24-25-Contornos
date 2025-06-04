@@ -1,3 +1,5 @@
+package ud4.maloscheiros;
+
 public class CalculadorBonificaciones {
     public double calcularBonificacionNivel1(int antiguedad) {
         if (antiguedad > 5) {

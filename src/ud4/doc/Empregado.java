@@ -1,4 +1,4 @@
-package contornos.ud4.doc;
+package ud4.doc;
 
 /**
  * <h2>Clase de empregados, que se usa para crear e ler empregados desde unha

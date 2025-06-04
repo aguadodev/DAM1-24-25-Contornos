@@ -1,4 +1,4 @@
-package ud4.a11maloscheiros;
+package ud4.maloscheiros;
 public class GodLine {
     //A liña de código é moi longa e fai difícil a súa lectura e mantemento.
     public double calcularPrecioFinal(double precioBase, double descuento, double

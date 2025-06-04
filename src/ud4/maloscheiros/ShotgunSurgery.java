@@ -1,4 +1,4 @@
-package contornos.ud4.maloscheiros;
+package ud4.maloscheiros;
 
 // Autor: David Besada
 // Bad Smell: Ciruxía a tiros (Shotgun surgery)

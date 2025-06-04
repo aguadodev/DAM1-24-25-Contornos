@@ -1,4 +1,4 @@
-package ud4.malosOlores;
+package ud4.maloscheiros;
 
 class Nomina {
     private double salario;

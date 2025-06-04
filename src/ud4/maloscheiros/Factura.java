@@ -1,4 +1,4 @@
-package contornos.ud4.maloscheiros;
+package ud4.maloscheiros;
 
 // Duplicated Code
 

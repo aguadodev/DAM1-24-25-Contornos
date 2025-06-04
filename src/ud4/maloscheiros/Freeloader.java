@@ -1,4 +1,4 @@
-package ud4.a11maloscheiros;
+package ud4.maloscheiros;
 
 public class Freeloader {
     private String nome;
